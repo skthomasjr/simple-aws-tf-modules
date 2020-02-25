@@ -1,3 +1,11 @@
+variable "region" {
+  type = string
+}
+
+variable "profile" {
+  type = string
+}
+
 variable "policy_file" {
   type = string
 }
