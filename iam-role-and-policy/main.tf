@@ -14,8 +14,9 @@ resource "aws_iam_role_policy" "test_policy" {
 }
 
 resource "aws_iam_role" "test_role" {
-  name               = var.name
-  assume_role_policy = data.template_file.role.rendered
+  name                 = var.name
+  assume_role_policy   = data.template_file.role.rendered
+  max_session_duration = var.max_session_duration
 }
 
 data "template_file" "policy" {
