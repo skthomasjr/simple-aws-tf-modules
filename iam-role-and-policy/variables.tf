@@ -10,6 +10,10 @@ variable "name" {
   type = string
 }
 
+variable "max_session_duration" {
+  type = string
+}
+
 variable "policy_file" {
   type = string
 }
