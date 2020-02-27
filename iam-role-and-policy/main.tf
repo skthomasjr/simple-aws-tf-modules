@@ -8,13 +8,13 @@ provider "aws" {
 }
 
 resource "aws_iam_role_policy" "test_policy" {
-  name   = "test_policy"
+  name   = var.name
   role   = aws_iam_role.test_role.id
   policy = data.template_file.policy.rendered
 }
 
 resource "aws_iam_role" "test_role" {
-  name               = "test_role"
+  name               = var.name
   assume_role_policy = data.template_file.role.rendered
 }
 
