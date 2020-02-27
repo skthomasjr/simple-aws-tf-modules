@@ -11,7 +11,8 @@ variable "name" {
 }
 
 variable "max_session_duration" {
-  type = string
+  type    = string
+  default = "28800"
 }
 
 variable "policy_file" {
