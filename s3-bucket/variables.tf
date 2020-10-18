@@ -1,5 +1,4 @@
 variable "region" {}
-variable "profile" {}
 
 variable "bucket" {
   description = "name for the bucket"
